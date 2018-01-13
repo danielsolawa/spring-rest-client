@@ -1,3 +1,5 @@
+# Java Maven CircleCI 2.0 configuration file
+
 # Check https://circleci.com/docs/2.0/language-java/ for more details
 #
 version: 2
@@ -35,10 +37,6 @@ jobs:
           paths:
             - ~/.m2
           key: v1-dependencies-{{ checksum "build.gradle" }}
-
-      - run:
-            name: chmod permissions
-            command: chmod +x ./gradlew
 
       # run tests! and gen code coverage
       - run: ./gradlew clean test jacocoTestReport
