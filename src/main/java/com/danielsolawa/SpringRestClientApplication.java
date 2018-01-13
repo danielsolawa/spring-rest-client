@@ -8,5 +8,6 @@ public class SpringRestClientApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringRestClientApplication.class, args);
+
 	}
 }
