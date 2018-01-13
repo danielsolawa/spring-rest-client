@@ -14,7 +14,7 @@ public class Card implements Serializable{
     private static final long serialVersionUID = 8347663643581180766L;
 
     private String type;
-    private Integer number;
+    private String number;
     private ExpirationDate expirationDate;
     private String iban;
     private String swift;
